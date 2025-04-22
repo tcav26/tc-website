@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Tim Cavanagh | Pharmacist & Fitness Coach</title>
+    <meta name="description" content="Learn about Tim Cavanagh's unique background combining pharmacy expertise with fitness coaching for a holistic approach to health.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://placehold.co/32x32/000000/FFFFFF?text=TC" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+        // Optional: Configure Tailwind
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                     colors: {
+                        // Example custom colors - adjust as needed
+                        primary: '#1D4ED8', // Blue-700
+                        secondary: '#10B981', // Emerald-500
+                        accent: '#F59E0B', // Amber-500
+                    }
+                }
+            }
+        }
+    </script>
+     <style>
+        /* Add smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-primary hover:text-blue-700 transition duration-300">
+                Tim Cavanagh Coaching
+            </a>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="text-gray-700 hover:text-primary font-medium transition duration-300">Home</a></li>
+                <li><a href="about.html" class="text-primary font-medium border-b-2 border-primary">About Me</a></li> <li><a href="services.html" class="text-gray-700 hover:text-primary font-medium transition duration-300">Services</a></li>
+                <li><a href="contact.html" class="text-gray-700 hover:text-primary font-medium transition duration-300">Contact</a></li>
+            </ul>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-primary focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <ul class="px-4 py-2 space-y-2">
+                 <li><a href="index.html" class="block py-2 text-gray-700 hover:text-primary font-medium transition duration-300">Home</a></li>
+                <li><a href="about.html" class="block py-2 text-primary font-medium">About Me</a></li> <li><a href="services.html" class="block py-2 text-gray-700 hover:text-primary font-medium transition duration-300">Services</a></li>
+                <li><a href="contact.html" class="block py-2 text-gray-700 hover:text-primary font-medium transition duration-300">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="py-16 md:py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-bold text-center text-gray-900 mb-12">
+                Meet Tim Cavanagh: Your Partner in Health
+            </h1>
+
+            <section class="mb-16 grid md:grid-cols-5 gap-12 items-center">
+                <div class="md:col-span-2 flex justify-center">
+                    <img src="https://placehold.co/400x500/10B981/FFFFFF?text=Tim+About" alt="Tim Cavanagh" class="rounded-lg shadow-xl object-cover w-full max-w-sm">
+                    </div>
+                <div class="md:col-span-3">
+                    <h2 class="text-3xl font-semibold text-gray-800 mb-4">Bridging Pharmacy and Fitness</h2>
+                    <div class="prose prose-lg text-gray-700 max-w-none">
+                        <p>
+                            Welcome! I'm Tim Cavanagh, and my journey into health and wellness has taken a unique path, blending the scientific rigor of pharmacy with the practical application of fitness and nutrition coaching.
+                        </p>
+                        <p>
+                            My fascination with how the human body works began early, leading me to pursue a career as a pharmacist. In practice, I saw firsthand the profound impact lifestyle choices have on long-term health, often complementing or even reducing the need for medication. However, I also noticed a gap: patients often received advice on diet and exercise but lacked the specific guidance and support to implement those changes effectively and safely, especially alongside their existing health conditions or treatments.
+                        </p>
+                        <p>
+                            This realization sparked a second passion: fitness and nutrition. I became a certified fitness instructor to gain the expertise needed to bridge that gap. My mission is to empower individuals like you to take control of their health through sustainable, evidence-based fitness and nutrition strategies, informed by a deep understanding of health sciences.
+                        </p>
+                        <p>
+                            I believe that optimal health comes from a holistic approach, considering every aspect of your well-being. Let's work together to build a healthier, stronger you.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-16 bg-white p-8 rounded-lg shadow-md">
+                <h2 class="text-3xl font-semibold text-gray-800 mb-6 text-center md:text-left">Qualifications & Expertise</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold text-primary mb-3">Pharmacy Background</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Registered Pharmacist (RPh / PharmD - *Be specific here*)</li>
+                            <li>[Years] of experience in [Community/Clinical - specify] pharmacy.</li>
+                            <li>Deep understanding of pharmacology, disease states, and medication management.</li>
+                            <li>Expertise in identifying potential drug-nutrient and drug-exercise interactions.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-secondary mb-3">Fitness & Nutrition Credentials</h3>
+                         <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Certified Personal Trainer (CPT - *Specify certifying body, e.g., NASM, ACE*)</li>
+                            <li>[Specify any Nutrition Certification, e.g., Precision Nutrition L1]</li>
+                            <li>Specialization in [e.g., Strength Training, Corrective Exercise - if applicable]</li>
+                            <li>Commitment to ongoing education in exercise science and nutrition.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="text-center max-w-3xl mx-auto">
+                <h2 class="text-3xl font-semibold text-gray-800 mb-4">My Coaching Philosophy</h2>
+                 <div class="prose prose-lg text-gray-700 max-w-none mx-auto">
+                    <p>
+                        I believe in a client-centered, evidence-based approach. My goal isn't just to give you a plan, but to educate and empower you to make lasting changes. We'll focus on:
+                    </p>
+                     <ul class="list-none space-y-2">
+                        <li class="flex items-start"><span class="text-secondary mr-2">&#10004;</span>Sustainability over quick fixes.</li>
+                        <li class="flex items-start"><span class="text-secondary mr-2">&#10004;</span>Personalization based on your unique needs, goals, and health context.</li>
+                        <li class="flex items-start"><span class="text-secondary mr-2">&#10004;</span>Building foundational habits for long-term success.</li>
+                        <li class="flex items-start"><span class="text-secondary mr-2">&#10004;</span>Progress, not perfection, celebrating milestones along the way.</li>
+                        <li class="flex items-start"><span class="text-secondary mr-2">&#10004;</span>Integrating fitness and nutrition seamlessly into your life.</li>
+                    </ul>
+                    <p class="mt-4">
+                        Your health journey is unique, and your coaching should be too.
+                    </p>
+                 </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-8 mt-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; <span id="current-year"></span> Tim Cavanagh Coaching. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

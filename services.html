@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coaching Services | Tim Cavanagh Coaching</title>
+    <meta name="description" content="Explore online fitness and nutrition coaching packages offered by Tim Cavanagh, Pharmacist & Fitness Coach.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://placehold.co/32x32/000000/FFFFFF?text=TC" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+        // Optional: Configure Tailwind
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                     colors: {
+                        // Example custom colors - adjust as needed
+                        primary: '#1D4ED8', // Blue-700
+                        secondary: '#10B981', // Emerald-500
+                        accent: '#F59E0B', // Amber-500
+                    }
+                }
+            }
+        }
+    </script>
+     <style>
+        /* Add smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-primary hover:text-blue-700 transition duration-300">
+                Tim Cavanagh Coaching
+            </a>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="text-gray-700 hover:text-primary font-medium transition duration-300">Home</a></li>
+                <li><a href="about.html" class="text-gray-700 hover:text-primary font-medium transition duration-300">About Me</a></li>
+                <li><a href="services.html" class="text-primary font-medium border-b-2 border-primary">Services</a></li> <li><a href="contact.html" class="text-gray-700 hover:text-primary font-medium transition duration-300">Contact</a></li>
+            </ul>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-primary focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <ul class="px-4 py-2 space-y-2">
+                 <li><a href="index.html" class="block py-2 text-gray-700 hover:text-primary font-medium transition duration-300">Home</a></li>
+                <li><a href="about.html" class="block py-2 text-gray-700 hover:text-primary font-medium transition duration-300">About Me</a></li>
+                <li><a href="services.html" class="block py-2 text-primary font-medium">Services</a></li> <li><a href="contact.html" class="block py-2 text-gray-700 hover:text-primary font-medium transition duration-300">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="py-16 md:py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-bold text-center text-gray-900 mb-6">
+                Online Fitness & Nutrition Coaching
+            </h1>
+            <p class="text-lg text-center text-gray-700 mb-12 max-w-3xl mx-auto">
+                Choose the level of support that's right for you. All packages leverage my unique background as both a pharmacist and fitness expert to ensure safe, effective, and personalized results.
+            </p>
+
+            <section class="grid md:grid-cols-1 lg:grid-cols-2 gap-10">
+
+                <div class="bg-white p-8 rounded-lg shadow-lg border border-gray-200 flex flex-col">
+                    <h2 class="text-2xl font-semibold text-primary mb-4">Comprehensive Coaching</h2>
+                    <p class="text-gray-600 mb-6 flex-grow">
+                        Ideal for individuals seeking fully personalized fitness and nutrition guidance with maximum support and accountability. Perfect for beginners or those managing specific health considerations.
+                    </p>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">What's Included:</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700 mb-8 flex-grow">
+                        <li>Detailed Initial Consultation (60-min video call: health history, medication review, goals, assessments)</li>
+                        <li>Completely Customized Workout Plan (Delivered via app, updated monthly or as needed)</li>
+                        <li>Personalized Nutrition Strategy (Macros, meal guidance, recipes, adjustments)</li>
+                        <li>Weekly Video or Email Check-ins (Your preference)</li>
+                        <li>Unlimited Messaging Support via Coaching App</li>
+                        <li>Technique/Form Video Analysis</li>
+                        <li>Ongoing Education & Resource Access</li>
+                    </ul>
+                    <p class="text-2xl font-bold text-gray-900 mb-6 text-center">
+                        $XXX / month </p>
+                    <a href="contact.html?package=comprehensive" class="block w-full bg-primary text-white font-medium py-3 px-6 rounded-lg shadow hover:bg-blue-700 transition duration-300 text-center mt-auto">
+                        Get Started with Comprehensive Coaching
+                    </a>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-lg border border-gray-200 flex flex-col">
+                    <h2 class="text-2xl font-semibold text-secondary mb-4">Fitness Focus Coaching</h2>
+                     <p class="text-gray-600 mb-6 flex-grow">
+                       Designed for those primarily seeking structured workout programming and guidance, with less emphasis on detailed nutrition coaching (though general guidance is included).
+                    </p>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">What's Included:</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700 mb-8 flex-grow">
+                        <li>Initial Consultation (45-min video call: health history, goals, fitness assessment)</li>
+                        <li>Customized Workout Plan (Delivered via app, updated monthly)</li>
+                        <li>Bi-Weekly Email Check-ins</li>
+                        <li>Messaging Support via Coaching App (Business hours)</li>
+                        <li>Technique/Form Video Analysis (Up to 2 per month)</li>
+                        <li>General Nutrition Guidelines & Resources</li>
+                    </ul>
+                     <p class="text-2xl font-bold text-gray-900 mb-6 text-center">
+                        $YYY / month </p>
+                    <a href="contact.html?package=fitness" class="block w-full bg-secondary text-white font-medium py-3 px-6 rounded-lg shadow hover:bg-emerald-600 transition duration-300 text-center mt-auto">
+                        Get Started with Fitness Focus
+                    </a>
+                </div>
+
+                 </section>
+
+            <section class="mt-16 pt-12 border-t border-gray-300">
+                 <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">
+                    The Pharmacist Advantage in Your Coaching
+                </h2>
+                <div class="max-w-3xl mx-auto bg-blue-50 p-8 rounded-lg shadow-md">
+                     <p class="text-lg text-gray-800 leading-relaxed">
+                        My background as a pharmacist isn't just a credential; it's an integral part of how I coach. It allows me to:
+                    </p>
+                    <ul class="list-disc list-inside space-y-3 mt-4 text-gray-700 text-lg">
+                        <li><strong class="text-primary">Review potential interactions:</strong> Ensure your fitness and nutrition plan works safely alongside any medications you take.</li>
+                        <li><strong class="text-primary">Tailor plans for health conditions:</strong> Design effective programs considering conditions like diabetes, hypertension, arthritis, etc.</li>
+                        <li><strong class="text-primary">Understand physiological impacts:</strong> Apply a deeper knowledge of how exercise and diet affect your body at a biochemical level.</li>
+                        <li><strong class="text-primary">Provide credible information:</strong> Offer guidance grounded in science and health literacy.</li>
+                    </ul>
+                     <p class="text-lg text-gray-800 leading-relaxed mt-4">
+                        This integrated approach provides an added layer of safety, efficacy, and personalization to your health journey.
+                    </p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-8 mt-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; <span id="current-year"></span> Tim Cavanagh Coaching. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

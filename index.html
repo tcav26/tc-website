@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim Cavanagh | Pharmacist & Fitness Coach | Online Coaching</title>
+    <meta name="description" content="Personalized online fitness and nutrition plans from Tim Cavanagh, a registered Pharmacist and Certified Fitness Instructor.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://placehold.co/32x32/000000/FFFFFF?text=TC" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+        // Optional: Configure Tailwind
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        // Example custom colors - adjust as needed
+                        primary: '#1D4ED8', // Blue-700
+                        secondary: '#10B981', // Emerald-500
+                        accent: '#F59E0B', // Amber-500
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Add smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-primary hover:text-blue-700 transition duration-300">
+                Tim Cavanagh Coaching
+            </a>
+
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="text-gray-700 hover:text-primary font-medium transition duration-300">Home</a></li>
+                <li><a href="about.html" class="text-gray-700 hover:text-primary font-medium transition duration-300">About Me</a></li>
+                <li><a href="services.html" class="text-gray-700 hover:text-primary font-medium transition duration-300">Services</a></li>
+                <li><a href="contact.html" class="text-gray-700 hover:text-primary font-medium transition duration-300">Contact</a></li>
+            </ul>
+
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-primary focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <ul class="px-4 py-2 space-y-2">
+                <li><a href="index.html" class="block py-2 text-gray-700 hover:text-primary font-medium transition duration-300">Home</a></li>
+                <li><a href="about.html" class="block py-2 text-gray-700 hover:text-primary font-medium transition duration-300">About Me</a></li>
+                <li><a href="services.html" class="block py-2 text-gray-700 hover:text-primary font-medium transition duration-300">Services</a></li>
+                <li><a href="contact.html" class="block py-2 text-gray-700 hover:text-primary font-medium transition duration-300">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="bg-gradient-to-r from-blue-50 to-emerald-50 py-16 md:py-24">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+                        Evidence-Based Fitness & Nutrition Coaching
+                    </h1>
+                    <p class="text-lg text-gray-700 mb-8">
+                        Personalized online plans from Tim Cavanagh, a registered Pharmacist and Certified Fitness Instructor, integrating health science with practical fitness for sustainable results.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+                         <a href="services.html" class="inline-block bg-primary text-white font-medium py-3 px-8 rounded-lg shadow hover:bg-blue-700 transition duration-300 text-center">
+                            Explore Coaching Packages
+                        </a>
+                        <a href="contact.html" class="inline-block bg-secondary text-white font-medium py-3 px-8 rounded-lg shadow hover:bg-emerald-600 transition duration-300 text-center">
+                            Book a Free Consultation
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <img src="https://placehold.co/600x400/1D4ED8/FFFFFF?text=Tim+Cavanagh" alt="Tim Cavanagh - Pharmacist and Fitness Coach" class="rounded-lg shadow-xl w-full max-w-md object-cover">
+                    </div>
+            </div>
+        </section>
+
+        <section id="value-prop" class="py-16 md:py-20 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold text-gray-900 mb-12">
+                    Why Choose a Pharmacist-Led Fitness Coach?
+                </h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                         <div class="flex justify-center mb-4">
+                            <svg class="w-12 h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Holistic Health View</h3>
+                        <p class="text-gray-600">
+                            Understand how fitness, nutrition, and your unique health history (including medications) intersect for a truly comprehensive plan.
+                        </p>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                         <div class="flex justify-center mb-4">
+                             <svg class="w-12 h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.28a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg> </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Science-Backed Methods</h3>
+                        <p class="text-gray-600">
+                            Receive guidance grounded in scientific evidence and physiological understanding, not just fleeting fitness trends.
+                        </p>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                         <div class="flex justify-center mb-4">
+                             <svg class="w-12 h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg> </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Safety & Credibility</h3>
+                        <p class="text-gray-600">
+                            Benefit from the expertise to tailor plans safely, considering potential interactions and health conditions, ensuring effective progress.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services-overview" class="py-16 md:py-20 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold text-gray-900 mb-12">
+                    How I Can Help You Achieve Your Goals
+                </h2>
+                <div class="max-w-3xl mx-auto">
+                    <ul class="space-y-4 text-lg text-gray-700 list-disc list-inside text-left marker:text-primary">
+                        <li>Personalized fitness programming tailored to your level and objectives.</li>
+                        <li>Custom nutrition guidance based on science and your preferences.</li>
+                        <li>Actionable lifestyle and habit coaching for long-term success.</li>
+                        <li>Expert considerations for managing fitness with specific health conditions or medications.</li>
+                        <li>Ongoing support and adjustments to keep you progressing.</li>
+                    </ul>
+                    <a href="services.html" class="mt-10 inline-block text-primary hover:text-blue-700 font-medium transition duration-300 text-lg">
+                        Learn more about my coaching services &rarr;
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; <span id="current-year"></span> Tim Cavanagh Coaching. All Rights Reserved.</p>
+            </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

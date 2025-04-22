@@ -1,0 +1,57 @@
+/* style.css */
+
+/* Import Google Font defined in HTML (Inter) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+/* Apply base styles - Tailwind handles most of this, but you can add overrides or custom classes */
+body {
+    font-family: 'Inter', sans-serif;
+    /* Example: Add a subtle background pattern if desired */
+    /* background-image: url('path/to/subtle-pattern.png'); */
+}
+
+/* Custom utility class example */
+.prose { /* Tailwind's typography plugin adds this, but you can customize */
+    /* Example: Change link color within prose sections */
+    /* a {
+        color: theme('colors.secondary');
+        text-decoration: underline;
+    }
+    a:hover {
+        color: theme('colors.emerald.600');
+    } */
+}
+
+/* Example: Custom button style (can be used alongside Tailwind classes) */
+.btn-custom-accent {
+    @apply inline-block bg-accent text-white font-medium py-3 px-8 rounded-lg shadow transition duration-300 text-center;
+    /* Tailwind's @apply directive lets you use Tailwind classes here */
+}
+
+.btn-custom-accent:hover {
+     @apply bg-amber-600; /* Example hover state using Tailwind color */
+}
+
+
+/* Mobile Menu Animation (Optional) */
+#mobile-menu {
+    transition: max-height 0.3s ease-out;
+    max-height: 0;
+    overflow: hidden;
+}
+
+#mobile-menu.open {
+    max-height: 500px; /* Adjust as needed, large enough for menu items */
+}
+
+/* Styling for active navigation link (Example using border) */
+/* Tailwind classes are used in the HTML for this, but you could define a custom class */
+/*
+.nav-link-active {
+    @apply text-primary font-semibold border-b-2 border-primary;
+}
+*/
+
+/* You can add more specific styles here if Tailwind doesn't cover a specific need,
+   but try to leverage Tailwind utilities as much as possible for consistency. */
+
